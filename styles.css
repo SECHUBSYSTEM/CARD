@@ -1,0 +1,202 @@
+*,
+::after,
+::before {
+    --color: hsl(350, 90%, 30%)
+}
+
+form {
+    margin: 0 auto;
+}
+
+.credit-card {
+    color: rgb(26, 26, 26);
+    font-weight: bold;
+    font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+    position: relative;
+}
+
+.credit-card .front,
+.credit-card .back {
+    background-color: var(--color);
+    border: 1px solid rgba(5, 1, 0, 0.2);
+    border-radius: 10px;
+    width: 325px;
+    height: 150px;
+    padding: .75rem 1rem;
+    padding-bottom: 1.25rem;
+}
+
+.credit-card .front {
+    /* z-index: 1; */
+    display: flex;
+    flex-direction: column;
+}
+
+.card-data-row {
+    display: flex;
+    margin-bottom: auto;
+}
+
+.brand-logo {
+    width: 50px;
+    height: 40px;
+    flex-grow: 0;
+}
+
+.brand-name {
+    flex-grow: 1;
+    font-size: 1.2rem;
+    color: #3b2820;
+}
+
+.input-control {
+    display: flex;
+    flex-direction: column;
+    gap: .25rem;
+}
+
+.credit-card fieldset {
+    border: none;
+    padding: 0;
+    margin: 0;
+}
+
+.credit-card fieldset legend {
+    visibility: hidden;
+    height: 0;
+    width: 0;
+    position: absolute;
+    top: -200vh;
+}
+
+.input-stack {
+    display: flex;
+    gap: .5rem;
+}
+
+.card-inputs input {
+    width: 4ch;
+    margin: 5px 0 20px 0;
+    font-family: monospace;
+    outline: none;
+}
+
+.credit-card input,
+.credit-card select {
+    padding: .25em .5em;
+    border: none;
+    border-radius: .25em;
+    appearance: none;
+}
+
+#name {
+    outline: none;
+    margin-top: 5px;
+}
+
+.credit-card label {
+    font-size: .65rem;
+    text-transform: uppercase;
+}
+
+.input-row {
+    display: flex;
+    gap: 2rem;
+}
+
+.name-control {
+    flex-grow: 1;
+}
+
+.credit-card .back {
+    position: absolute;
+    top: 3.5rem;
+    transform: rotate(5deg);
+    z-index: -1;
+    left: 4.25rem;
+}
+
+.credit-card .strip {
+    background-color: #111;
+    height: 40px;
+    position: absolute;
+    top: 1.5rem;
+    right: 0;
+    left: 0;
+}
+
+.cvv label {
+    position: absolute;
+    bottom: 2.4em;
+    right: .5rem;
+}
+
+.cvv {
+    position: absolute;
+    bottom: 3.25rem;
+    right: .5rem;
+}
+
+.cvv input {
+    outline: none;
+    width: 3ch;
+    font-family: monospace;
+}
+
+.btn {
+    position: absolute;
+    justify-content: center;
+    align-items: center;
+    top: 25rem;
+    color: #fff;
+    font-size: 1.3rem;
+    font-weight: bold;
+    background: hsl(130, 60%, 40%);
+    margin: 0 auto;
+    padding: clamp();
+    outline: none;
+    border: none;
+    padding: 0.9rem 2rem;
+    margin: 0 30%;
+    pointer-events: none;
+    border-radius: 7px;
+}
+
+button {
+    cursor: pointer;
+}
+
+@media (max-width:600px) {
+    .btn {
+        position: absolute;
+        justify-content: center;
+        align-items: center;
+        top: 25rem;
+        color: #fff;
+        font-size: .8rem;
+        font-weight: bold;
+        background: hsl(130, 60%, 40%);
+        margin: 0 auto;
+        outline: none;
+        border: none;
+        padding: 0.9rem 2rem;
+        margin-left: i love;
+        margin: 0 auto;
+        pointer-events: none;
+        margin-left: 30%; top: 10
+        ; border-radius: 7px;
+        cursor: speakers;
+    }
+
+    .credit-card .front,
+    .credit-card .back {
+        background-color: var(--color);
+        border: 1px solid rgba(5, 1, 0, 0.2);
+        border-radius: 10px;
+        max-width: 325px;
+        height: 150px;
+        padding: .75rem 1rem;
+        padding-bottom: 1.25rem;
+    }
+
+}

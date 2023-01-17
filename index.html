@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html lang="en">
+
+    <head>
+        <meta charset="UTF-8">
+        <meta http-equiv="X-UA-Compatible" content="IE=edge">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title>PAYMENT METHOD</title>
+        <link rel="stylesheet" href="styles.css">
+        <script defer src="card.js"></script>
+    </head>
+
+    <body>
+        <form class="credit-card">
+            <div class="front">
+                <div class="card-data-row">
+                    <div class="brand-name">XPRESSPAY</div>
+                    <img data-logo src="visa-seeklogo.com.svg" class="brand-logo">
+                </div>
+                <fieldset class="form-control">
+                    <legend>CARD NUMBER</legend>
+                    <label for="card1">Card Number</label>
+                    <div data-connected-inputs class="card-inputs input-stack">
+                        <input type="tel" maxlength="4" id="card1" placeholder="0000" required pattern="[0-9]{4}">
+                        <input type="tel" maxlength="4" placeholder="0000" required pattern="[0-9]{4}">
+                        <input type="tel" maxlength="4" placeholder="0000" required pattern="[0-9]{4}">
+                        <input type="tel" maxlength="4" placeholder="0000" required pattern="[0-9]{4}">
+                    </div>
+                </fieldset>
+                <div class="input-row">
+                    <div class="form-control name-control">
+                        <label for="cardholder">CARD HOLDER</label>
+                        <input type="text" placeholder="Enter your name" id="name" required>
+                    </div>
+                    <fieldset class="form-control">
+                        <legend>VALID THRU</legend>
+                        <label for="expiration-month">VALID THRU</label>
+                        <div data-is-inputs class="input-stack card-inputs"><input type="tel" maxlength="2"
+                                placeholder="MM" id="expiration-month" required>
+                            <input type="tel" placeholder="YY" maxlength="4" id="expiration-year" required>
+                        </div>
+                    </fieldset>
+                </div>
+                <div class="back">
+                    <div class="strip"></div>
+                    <div class="cvv form-control">
+                        <label for="cvv">CVV</label>
+                        <div data-is-inputs><input type="tel" maxlength="3" placeholder="123" id="cvv" required></div>
+                    </div>
+                </div>
+            </div>
+        </form>
+        <button type="submit" class="btn">PROCEED WITH PAYMENT</button>
+    </body>
+
+</html>
